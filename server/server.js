@@ -10,10 +10,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      "http://localhost:3000",
-      "https://megaplex-anurag.vercel.app",
-    ],
+    origin: "https://megaplex-anurag.vercel.app",
     credentials: true,
   }),
 );
