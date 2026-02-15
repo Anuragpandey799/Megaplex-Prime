@@ -7,7 +7,7 @@ export const ContentProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/content")
+    fetch("https://megaplex-prime-lml2.onrender.com/api/content")
       .then((res) => res.json())
       .then((data) => {
         setContent(data);

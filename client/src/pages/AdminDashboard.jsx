@@ -8,7 +8,7 @@ function AdminDashboard() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/content")
+    fetch("https://megaplex-prime-lml2.onrender.com/api/content")
       .then(res => res.json())
       .then(data => {
         setContent(data);
@@ -67,7 +67,7 @@ function AdminDashboard() {
   };
 
   const handleSave = async () => {
-    const res = await fetch("http://localhost:5000/api/content", {
+    const res = await fetch("https://megaplex-prime-lml2.onrender.com/api/content", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
